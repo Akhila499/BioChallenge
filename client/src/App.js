@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { GetDataFromApi } from "./hooks/GetDataFromApi";
+import PlacesRawList from "./components/PlacesRawList";
 
 function App() {
+  const { appState } = GetDataFromApi();
+  console.log("GetDataFromApi", appState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>Hello</div>
+      <PlacesRawList appState={appState} />
+    </>
   );
 }
 
