@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 const PlacesList = (props) => {
   const { place } = props;
 
-  console.log("listssdf", place);
   return (
     <>
       <p>
