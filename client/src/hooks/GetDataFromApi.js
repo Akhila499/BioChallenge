@@ -11,7 +11,7 @@ const GetDataFromApi = () => {
   useEffect(() => {
     fetchData();
     return () => {
-      setAppState({}); // This worked for me
+      setAppState({});
     };
   }, []);
 

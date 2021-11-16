@@ -14,7 +14,7 @@ const PlaceListItemDetails = (props) => {
       <Link to="/"> Go back to Places</Link>
       <div className="details">
         <div className="details_img">
-          <img src={`${imgUrl}`} />
+          <img src={`${imgUrl}`} alt={filterDetails[0].name} />
         </div>
         <div className="details_info">
           <ul>

@@ -2,7 +2,6 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import GetDataFromApi from "./hooks/GetDataFromApi";
 import PlacesRawList from "./components/PlacesRawList";
-import PlacesList from "./components/PlacesList";
 import PlaceListItemDetails from "./components/PlaceListItemDetails";
 
 function App() {
