@@ -1,5 +1,4 @@
 import "./App.css";
-// import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import GetDataFromApi from "./hooks/GetDataFromApi";
 import PlacesRawList from "./components/PlacesRawList";
@@ -23,7 +22,6 @@ function App() {
             element={<PlaceListItemDetails appState={appState} />}
           />
         </Routes>
-        {/* <PlacesRawList appState={appState} /> */}
       </div>
     </>
   );
